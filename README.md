@@ -98,7 +98,7 @@ Check the `examples/` folder to see what the output looks like:
 
 ## Built by Trueframe
 
-These skills are built by [Trueframe](https://trueframe.co), a premium done-for-you video content agency for founders. We use Claude Code internally to produce content for clients generating 7-8 figures.
+These skills are built by [Trueframe](https://www.trueframe.xyz), a premium done-for-you video content agency for founders. We use Claude Code internally to produce content for clients generating 7-8 figures.
 
 These are the generalized, open-source versions of our internal tools. If you want the premium version — fully tailored to your brand, your clients, and your specific workflow — that's what we do.
 
