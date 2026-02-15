@@ -4,7 +4,7 @@
 
 # Claude Content Marketing
 
-6 Claude Code skills that turn your expertise into scroll-stopping content. Built by a content agency that's generated 8+ figures in revenue for clients. Not prompt templates. Not generic AI slop. A system that learns your voice, studies your favorite creators, and produces content you'd actually post.
+6 Claude Code skills that give you an AI-native content engine — from strategy to scripts to multi-platform distribution. Built by [Trueframe](https://www.trueframe.xyz), a premium video content agency that's generated 8+ figures in revenue for founders and high-growth brands. These are the same workflows we run internally, open-sourced for anyone to use. The system learns your voice, studies creators you admire, and produces content across TikTok, YouTube, LinkedIn, and X — all from your terminal.
 
 ![Content Engine Demo](screenshots/demo.gif)
 
