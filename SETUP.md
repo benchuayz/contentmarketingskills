@@ -6,9 +6,9 @@ Step-by-step instructions to get the Content Engine running. Takes about 5 minut
 
 - A computer (Mac, Windows, or Linux)
 - Node.js 18+ installed ([download here](https://nodejs.org/))
-- An Anthropic API key ([sign up here](https://console.anthropic.com/))
+- A [Claude Pro or Max subscription](https://claude.ai/upgrade) **or** an [Anthropic API key](https://console.anthropic.com/)
 
-**Cost:** The Anthropic API charges per usage. Typical content creation costs $5-20/month depending on how much you generate. Running `/content-foundation` once costs roughly $0.10-0.30.
+**Cost:** If you have a Claude Pro ($20/month) or Max subscription, you're already covered — just log in. If using the Anthropic API instead, typical content creation costs $5-20/month. Running `/content-foundation` once costs roughly $0.10-0.30.
 
 ## Step 1: Install Claude Code
 
@@ -28,9 +28,15 @@ Verify the installation:
 claude --version
 ```
 
-## Step 2: Set Your API Key
+## Step 2: Authenticate Claude Code
 
-If this is your first time using Claude Code, it will prompt you for your Anthropic API key when you first run it. You can also set it manually:
+You have two options:
+
+**Option A: Claude Subscription (Recommended)**
+If you have a Claude Pro or Max subscription, just run `claude` and log in when prompted. No API key needed.
+
+**Option B: Anthropic API Key**
+If you prefer using the API directly, set your key:
 
 ```bash
 export ANTHROPIC_API_KEY=your-key-here
@@ -79,13 +85,27 @@ pip install yt-dlp
 
 This is completely optional. If yt-dlp isn't installed, skills will ask you to paste content manually instead.
 
+## Step 7 (Optional): Set Up Supadata for Instagram/TikTok
+
+To automatically pull transcripts from Instagram Reels and TikTok videos:
+
+1. Go to [supadata.ai](https://supadata.ai/) and create a free account (takes 30 seconds)
+2. Copy your API key from the dashboard
+3. Set it in your terminal:
+
+```bash
+export SUPADATA_API_KEY=your-key-here
+```
+
+Add it to your `~/.bashrc` or `~/.zshrc` to make it permanent. The free tier gives you 100 credits/month — enough for casual use.
+
 ## Troubleshooting
 
 **Skills not showing up?**
 Make sure you're inside the `content-engine-claude-code` directory when you run `claude`. Skills are discovered from the `.claude/skills/` folder in your current directory.
 
-**API key issues?**
-Visit [console.anthropic.com](https://console.anthropic.com/) to verify your key is active and has credits.
+**Authentication issues?**
+If using a Claude subscription, try running `claude` and logging in again. If using an API key, visit [console.anthropic.com](https://console.anthropic.com/) to verify your key is active and has credits.
 
 **yt-dlp not downloading subtitles?**
 Some videos don't have auto-generated captions. Try a different video, or paste the transcript manually.

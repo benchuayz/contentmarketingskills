@@ -24,8 +24,9 @@ claude
 ### Prerequisites
 
 - [Claude Code](https://claude.ai/claude-code) installed (`npm install -g @anthropic-ai/claude-code`)
-- An [Anthropic API key](https://console.anthropic.com/) (~$5-20/month for active use)
+- A [Claude Pro or Max subscription](https://claude.ai/upgrade) (just log in when prompted) **or** an [Anthropic API key](https://console.anthropic.com/) (~$5-20/month)
 - Optional: [yt-dlp](https://github.com/yt-dlp/yt-dlp) for automatic YouTube transcription
+- Optional: [Supadata API key](https://supadata.ai/) for automatic Instagram/TikTok transcription (free tier available)
 
 ## Quick Start
 
@@ -105,7 +106,9 @@ Check the `examples/` folder to see what the output looks like:
 - [Sample Style Profile](examples/sample-style-profile.md) — What `/creator-analysis` produces
 - [Sample Scripts](examples/sample-short-form-scripts.md) — What `/short-form-script` produces
 
-## Optional: YouTube Transcription
+## Optional: Auto-Transcription
+
+### YouTube (yt-dlp)
 
 Some skills can automatically pull transcripts from YouTube videos. To enable this:
 
@@ -117,7 +120,15 @@ brew install yt-dlp
 pip install yt-dlp
 ```
 
-Not required — skills will fall back to manual paste if yt-dlp isn't installed.
+### Instagram & TikTok (Supadata)
+
+To automatically pull transcripts from Instagram Reels and TikTok videos, get a free API key from [supadata.ai](https://supadata.ai/) and set it:
+
+```bash
+export SUPADATA_API_KEY=your-key-here
+```
+
+Neither is required — skills will fall back to manual paste if these aren't set up.
 
 ## Built by Trueframe
 

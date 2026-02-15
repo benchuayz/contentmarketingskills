@@ -61,9 +61,20 @@ For each creator, attempt to gather content using this priority order:
 5. FINAL FALLBACK: Ask user to paste 5-10 of their best posts, scripts, or video transcripts.
 
 **If Instagram/TikTok handle provided:**
-1. Use WebSearch: search for `[handle] instagram content [niche]` or `[handle] best posts`
-2. Use WebFetch on any public pages found
-3. FALLBACK: "I wasn't able to pull their content automatically from [platform]. Could you paste 5-10 of their best posts or video scripts? The more you paste, the better the style extraction will be."
+1. Check if `SUPADATA_API_KEY` environment variable is set: Run `echo $SUPADATA_API_KEY`
+2. If set — fetch transcripts from their recent videos using the Supadata API:
+   ```bash
+   curl -s -H "x-api-key: $SUPADATA_API_KEY" "https://api.supadata.ai/v1/transcript?url=[VIDEO_URL]"
+   ```
+   Use WebSearch first to find their recent video URLs, then pull transcripts for 3-5 videos.
+3. If Supadata is NOT set — tell the user:
+   "I can automatically pull transcripts from Instagram/TikTok if you set up a free Supadata API key. Takes 30 seconds:
+   - Sign up at supadata.ai
+   - Set it: `export SUPADATA_API_KEY=your-key-here`
+
+   Want to set it up now, or would you prefer to paste the content manually?"
+4. FALLBACK: Use WebSearch to search for `[handle] instagram content [niche]` or `[handle] best posts`, then WebFetch on any public pages found.
+5. FINAL FALLBACK: "I wasn't able to pull their content automatically from [platform]. Could you paste 5-10 of their best posts or video scripts? The more you paste, the better the style extraction will be."
 
 **If content pasted directly:**
 - Process immediately. This is the most reliable path.
