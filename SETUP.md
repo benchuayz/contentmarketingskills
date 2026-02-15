@@ -102,7 +102,7 @@ Add it to your `~/.bashrc` or `~/.zshrc` to make it permanent. The free tier giv
 ## Troubleshooting
 
 **Skills not showing up?**
-Make sure you're inside the `content-engine-claude-code` directory when you run `claude`. Skills are discovered from the `.claude/skills/` folder in your current directory.
+Make sure you're inside the `contentmarketingskills` directory when you run `claude`. Skills are discovered from the `.claude/skills/` folder in your current directory.
 
 **Authentication issues?**
 If using a Claude subscription, try running `claude` and logging in again. If using an API key, visit [console.anthropic.com](https://console.anthropic.com/) to verify your key is active and has credits.
