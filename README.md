@@ -2,7 +2,7 @@
 
 ![Claude Content Marketing](screenshots/cover-image.png)
 
-# Claude Content Marketing
+# Content Marketing Skills for Claude Code
 
 6 Claude Code skills that give you an AI-native content engine — from strategy to scripts to multi-platform distribution. Built by [Trueframe](https://www.trueframe.xyz), a premium video content agency that's generated 8+ figures in revenue for founders and high-growth brands. These are the same workflows we run internally, open-sourced for anyone to use. The system learns your voice, studies creators you admire, and produces content across TikTok, YouTube, LinkedIn, and X — all from your terminal.
 
@@ -27,6 +27,8 @@ claude
 - A [Claude Pro or Max subscription](https://claude.ai/upgrade) (just log in when prompted) **or** an [Anthropic API key](https://console.anthropic.com/) (~$5-20/month)
 - Optional: [yt-dlp](https://github.com/yt-dlp/yt-dlp) for automatic YouTube transcription
 - Optional: [Supadata API key](https://supadata.ai/) for automatic Instagram/TikTok transcription (free tier available)
+
+**New to Claude Code?** Follow the [Beginner's Guide](BEGINNERS-GUIDE.md) — covers VS Code installation, Claude Code setup, and getting started from scratch.
 
 ## Quick Start
 
