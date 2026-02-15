@@ -1,0 +1,20 @@
+# User-generated content (keep private)
+my-content/*
+!my-content/README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+/tmp/
+*.tmp
+
+# Claude Code memory (user-specific)
+.claude/memory/
+.claude/settings.json
+.claude/plans/
